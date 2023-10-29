@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {
   Button,
-  SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
   TextInput,
   View,
+  FlatList,
 } from 'react-native';
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
   const addGoalHandler = () => {
     setCourseGoals(currentCourseGoals => [
       ...currentCourseGoals,
-      enterTheGoalText,
+      {text: enterTheGoalText, id: Math.random().toString()},
     ]);
   };
 
@@ -61,25 +61,31 @@ const App = () => {
           marginTop: 20,
           // backgroundColor: '#ccc',
         }}>
-        <ScrollView alwaysBounceVertical={false}>
-          {courseGoals.map(goal => (
-            <View
-              style={{
-                margin: 8,
-                padding: 8,
-                borderRadius: 8,
-                backgroundColor: '#5E0acc',
-              }}>
-              <Text
+        <FlatList
+          alwaysBounceVertical={false}
+          data={courseGoals}
+          keyExtractor={(item, index) => item.id}
+          renderItem={itemData => {
+            const goal = itemData.item.text;
+            return (
+              <View
                 style={{
-                  color: 'white',
-                }}
-                key={goal}>
-                {goal}
-              </Text>
-            </View>
-          ))}
-        </ScrollView>
+                  margin: 8,
+                  padding: 8,
+                  borderRadius: 8,
+                  backgroundColor: '#5E0acc',
+                }}>
+                <Text
+                  style={{
+                    color: 'white',
+                  }}
+                  key={goal}>
+                  {goal}
+                </Text>
+              </View>
+            );
+          }}
+        />
       </View>
     </View>
   );
