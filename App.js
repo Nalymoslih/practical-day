@@ -8,6 +8,7 @@ import {
   View,
   FlatList,
 } from 'react-native';
+import GoalItem from './components/GoalItem';
 
 const App = () => {
   const [enterTheGoalText, setEnterTheGoalText] = useState('');
@@ -64,27 +65,10 @@ const App = () => {
         <FlatList
           alwaysBounceVertical={false}
           data={courseGoals}
-          keyExtractor={(item, index) => item.id}
           renderItem={itemData => {
-            const goal = itemData.item.text;
-            return (
-              <View
-                style={{
-                  margin: 8,
-                  padding: 8,
-                  borderRadius: 8,
-                  backgroundColor: '#5E0acc',
-                }}>
-                <Text
-                  style={{
-                    color: 'white',
-                  }}
-                  key={goal}>
-                  {goal}
-                </Text>
-              </View>
-            );
+            return <GoalItem text={itemData.item.text} />;
           }}
+          keyExtractor={(item, index) => item.id}
         />
       </View>
     </View>
