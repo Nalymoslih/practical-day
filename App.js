@@ -47,7 +47,6 @@ const App = () => {
         <Button title="Add" onPress={addGoalHandler} />
       </View>
             
-
       <View
         style={{
           borderBottomWidth: 1,
