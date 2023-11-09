@@ -16,6 +16,7 @@ const GoalItem = props => {
       }}>
       {props.text}
     </Text>
+      
   </View>;
 };
 
