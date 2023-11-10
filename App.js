@@ -13,6 +13,7 @@ import GoalItem from './components/GoalItem';
 const App = () => {
   const [enterTheGoalText, setEnterTheGoalText] = useState('');
   const [courseGoals, setCourseGoals] = useState([]);
+  
 
   const goalInputHandler = enteredText => {
     setEnterTheGoalText(enteredText);
