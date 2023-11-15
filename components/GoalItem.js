@@ -12,7 +12,6 @@ const GoalItem = props => {
     <Text
       style={{
         color: 'white',
-
       }}>
       {props.text}
     </Text>
