@@ -19,7 +19,6 @@ const GoalItem = props => {
 
 
 
-
         
       }}>
       {props.text}
