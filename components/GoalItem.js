@@ -13,7 +13,6 @@ const GoalItem = props => {
       style={{
         color: 'white',
 
-
       }}>
       {props.text}
     </Text>
