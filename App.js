@@ -20,7 +20,6 @@ const App = () => {
 
 
 
-
   const addGoalHandler = () => {
     setCourseGoals(currentCourseGoals => [
       ...currentCourseGoals,
