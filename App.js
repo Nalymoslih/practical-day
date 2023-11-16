@@ -18,6 +18,8 @@ const App = () => {
     setEnterTheGoalText(enteredText);
   };
 
+
+  
   
   
   const addGoalHandler = () => {
