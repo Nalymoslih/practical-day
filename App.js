@@ -17,6 +17,8 @@ const App = () => {
   const goalInputHandler = enteredText => {
     setEnterTheGoalText(enteredText);
   };
+
+  
   
   const addGoalHandler = () => {
     setCourseGoals(currentCourseGoals => [
