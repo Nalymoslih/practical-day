@@ -9,6 +9,9 @@ const GoalItem = props => {
       borderRadius: 8,
       backgroundColor: '#5E0acc',
     }}>
+
+
+      
     <Text
       style={{
         color: 'white',
