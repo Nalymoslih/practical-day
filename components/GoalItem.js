@@ -11,6 +11,9 @@ const GoalItem = props => {
     }}>
 
 
+
+      
+
       
     <Text
       style={{
