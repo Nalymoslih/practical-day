@@ -24,10 +24,7 @@ const App = () => {
       {text: enterTheGoalText, id: Math.random().toString()},
     ]);
   };
-
-
   
-
   return (
     <View
       style={{
