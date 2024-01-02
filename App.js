@@ -12,7 +12,6 @@ import GoalItem from './components/GoalItem';
 
 
 
-
 const App = () => {
 
 
