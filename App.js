@@ -11,7 +11,6 @@ import {
 import GoalItem from './components/GoalItem';
 
 const App = () => {
-
   
   const [enterTheGoalText, setEnterTheGoalText] = useState('');
 
