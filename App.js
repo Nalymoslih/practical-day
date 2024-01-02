@@ -10,7 +10,6 @@ import {
 } from 'react-native';
 import GoalItem from './components/GoalItem';
 
-
 const App = () => {
 
 
