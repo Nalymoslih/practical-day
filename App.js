@@ -24,6 +24,16 @@ const App = () => {
     ]);
   };
 
+
+
+
+
+
+
+
+
+  
+
   return (
     <View
       style={{
