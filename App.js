@@ -17,13 +17,6 @@ const App = () => {
     setEnterTheGoalText(enteredText);
   };
 
-
-
-
-
-
-
-
   const addGoalHandler = () => {
     setCourseGoals(currentCourseGoals => [
       ...currentCourseGoals,
